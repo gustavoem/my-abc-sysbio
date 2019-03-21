@@ -1,0 +1,92 @@
+Model 1
+name: model1
+source: final_model.sbml
+
+number of compartments: 1
+number of reactions: 11
+number of rules: 2
+	 Algebraic rules: 0
+	 Assignment rules: 2
+	 Rate rules: 0
+
+number of functions: 0
+number of events: 0
+
+Species with initial values: 11
+S1:	MKKK	species1	(81.94)
+S2:	MKKK_P	species2	(18.06)
+S3:	MKK	species3	(272.22)
+S4:	MKK_P	species4	(19.93)
+S5:	MKK_PP	species5	(7.85)
+S6:	MAPK	species6	(288.5)
+S7:	MAPK_P	species7	(8.92)
+S8:	MAPK_PP	species8	(2.93)
+S9:	ras_gtp	species9	(333.0)
+S10:	total_mapk_activated	species10	(0.0)
+S11:	total_mek	species11	(0.0)
+
+Parameter: 15 (the first 13 are global parameter)
+(0 parameter is treated as species)
+P1:	uVol	compartment1	(1.0)
+P2:	parameter_1	parameter1	(0.585)
+P3:	parameter_2	parameter2	(1.19e-06)
+P4:	parameter_3	parameter3	(10.8)
+P5:	parameter_4	parameter4	(3.45)
+P6:	kcat5	parameter5	(0.75)
+P7:	km5	parameter6	(15.0)
+P8:	kcat9	parameter7	(0.5)
+P9:	km9	parameter8	(15.0)
+P10:	kcat7	parameter9	(0.025)
+P11:	km7	parameter10	(15.0)
+P12:	kcat3	parameter11	(0.025)
+P13:	km3	parameter12	(15.0)
+P14:	V2	parameter13	(0.25)
+P15:	KK2	parameter14	(8.0)
+
+############################################################
+
+Model 2
+name: model2
+source: initial_model.sbml
+
+number of compartments: 1
+number of reactions: 10
+number of rules: 2
+	 Algebraic rules: 0
+	 Assignment rules: 2
+	 Rate rules: 0
+
+number of functions: 0
+number of events: 0
+
+Species with initial values: 11
+S1:	MKKK	species1	(81.94)
+S2:	MKKK_P	species2	(18.06)
+S3:	MKK	species3	(272.22)
+S4:	MKK_P	species4	(19.93)
+S5:	MKK_PP	species5	(7.85)
+S6:	MAPK	species6	(288.5)
+S7:	MAPK_P	species7	(8.92)
+S8:	MAPK_PP	species8	(2.93)
+S9:	ras_gtp	species9	(40.75)
+S10:	total_mapk_activated	species10	(0.0)
+S11:	total_mek	species11	(0.0)
+
+Parameter: 13 (the first 11 are global parameter)
+(0 parameter is treated as species)
+P1:	uVol	compartment1	(1.0)
+P2:	parameter_1	parameter1	(0.00446)
+P3:	parameter_2	parameter2	(3.99)
+P4:	kcat5	parameter3	(0.75)
+P5:	km5	parameter4	(15.0)
+P6:	kcat9	parameter5	(0.5)
+P7:	km9	parameter6	(15.0)
+P8:	kcat7	parameter7	(0.025)
+P9:	km7	parameter8	(15.0)
+P10:	kcat3	parameter9	(0.025)
+P11:	km3	parameter10	(15.0)
+P12:	V2	parameter11	(0.25)
+P13:	KK2	parameter12	(8.0)
+
+############################################################
+

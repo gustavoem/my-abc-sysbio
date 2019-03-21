@@ -1,0 +1,4 @@
+To run this example with you local version of run-abc-sysbio:
+
+../../scripts/run-abc-sysbio -i input_2vs3_relaxed.xml -of=results -f -sd=2
+

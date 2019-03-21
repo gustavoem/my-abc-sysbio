@@ -1,0 +1,187 @@
+<input>
+
+
+######################## number of models
+# Number of models for which details are described in this input file
+<modelnumber> 2 </modelnumber>
+######################## restart
+# Restart from previous (pickled) population?
+<restart> False </restart>
+
+######################## epsilon schedule
+# Automatic epsilon schedule. Provide a vector of final epsilons and the alpha (defaults to 0.9)
+<!--<autoepsilon>-->
+<!--<finalepsilon> 1.0 </finalepsilon>-->
+<!--<alpha> 0.9 </alpha>-->
+<!--</autoepsilon>-->
+
+# OR
+# Series of epsilons. (Whitespace delimited list)
+# Multiple epsilon schedules can be specified by giving additional vectors enclosed in <e2> </e2>, <e3> </e3> etc
+# NOTE: the parser always reads them in order and ignores the tag value
+<epsilon> 
+ <e1> 350 320 300 270 230 190 160 130 100 70 </e1> 
+</epsilon> 
+
+
+
+######################## particles
+<particles> 100 </particles>
+
+######################## beta
+# Beta is the number of times to simulate each sampled parameter set.
+# This is only applicable for models simulated using Gillespie and SDE
+<beta> 1 </beta>
+
+######################## dt
+# Internal timestep for solver.
+# Make this small for a stiff model.
+<dt> 0.01 </dt>
+
+######################## perturbation kernels : OPTIONAL (default uniform)
+# The pertubation kernels are computed with respect to the previous parameter distribution
+# Currently uniform and normal are implemented
+<kernel> uniform </kernel>
+
+######################## model kernel : OPTIONAL (default 0.7)
+# Probability of perturbing the sampled model (ignored when modelnumber = 1)
+<modelkernel> 0.7 </modelkernel>
+
+######################## ODE solver control : OPTIONAL
+# rtol and atol can be specified here. If the model is stiff then making these small might help the simulation to run
+<rtol> 1e-4 </rtol>
+<atol> 1e-6 </atol>
+
+######################## User-supplied data
+<data>
+# times: For ABC SMC, times must be a whitespace delimited list
+# In simulation mode these are the timepoints for which the simulations will be output
+<times> 30 60 180 300 900 1800 </times>
+
+
+# variables: For ABC SMC, whitespace delimited lists of concentrations (ODE or SDE) or molecule numbers (Gillespie)
+# Denote your data via tags <v1> </v1> or <var1> </var1> or <v2> </v2> etc.
+# The tags are ignored and the data read in order
+# For simulation these data are ignored
+# See fitting instruction below if the dimensionality of your data sets differ from the dimensionality of your model
+<variables>
+<var1> 20.540163755557774 59.630168538864595 123.47598037481318 83.20535749835419 69.22950967477512 59.747557879208664 </var1>
+<var2> 18.385418071921986 55.18055586111847 114.59420125010101 80.44544901079148 59.20903719368796 60.22909040971412 </var2>
+<var3> 21.34138874411012 55.24068964152704 116.8426360501084 82.88620805577034 65.5306866792416 62.99232893135759 </var3>
+</variables>
+</data>
+
+######################## Models
+<models>
+<model1>
+<name> model1 </name>
+<source> initial_model.sbml </source>
+
+# type: the method used to simulate your model. ODE, SDE or Gillespie.
+<type> ODE </type>
+
+
+# Fitting information.
+# If fit is None, all species in the model are fitted to the data in the order they are listed in the model.
+# Otherwise, give a whitespace delimited list of fitting instrictions the same length as the dimensions of your data.
+# Use speciesN to denote the Nth species in your model. Simple arithmetic operations can be performed on these.
+# For example, to fit the sum of the first two species in the model to your first variable, write fit: species1+species2
+<fit> species7+species8 species7+species8 species7+species8 </fit>
+
+# Priors on initial conditions and parameters:
+# one of 
+#       constant, value 
+#       normal, mean, variance 
+#       uniform, lower, upper 
+#       lognormal, mean, variance 
+
+<initial>
+ <ic1> constant 81.94 </ic1>
+ <ic2> constant 18.06 </ic2>
+ <ic3> constant 272.22 </ic3>
+ <ic4> constant 19.93 </ic4>
+ <ic5> constant 7.85 </ic5>
+ <ic6> constant 288.5 </ic6>
+ <ic7> constant 8.92 </ic7>
+ <ic8> constant 2.93 </ic8>
+ <ic9> constant 40.75 </ic9>
+ <ic10> constant 0.0 </ic10>
+ <ic11> constant 0.0 </ic11>
+</initial>
+
+<parameters>
+<parameter1 realName='uVol'> constant 1.0 </parameter1>
+<parameter2 realName='parameter_1'> lognormal -1 3 </parameter2>
+<parameter3 realName='parameter_2'> lognormal 3 1 </parameter3>
+<parameter4 realName='kcat5'>       lognormal 0 1 </parameter4>
+<parameter5 realName='km5'>         lognormal 3 1 </parameter5>
+<parameter6 realName='kcat9'>       lognormal 0 1 </parameter6>
+<parameter7 realName='km9'>         lognormal 3 1 </parameter7>
+<parameter8 realName='kcat7'>       lognormal 0 1 </parameter8>
+<parameter9 realName='km7'>         lognormal 3 1 </parameter9>
+<parameter10 realName='kcat3'>      lognormal 0 1 </parameter10>
+<parameter11 realName='km3'>        lognormal 3 1 </parameter11>
+<parameter12 realName='V2'>         lognormal 0 1 </parameter12>
+<parameter13 realName='KK2'>        lognormal 3 1 </parameter13>
+</parameters>
+</model1>
+
+<model2>
+<name> model2 </name>
+<source> final_model.sbml </source>
+
+# type: the method used to simulate your model. ODE, SDE or Gillespie.
+<type> ODE </type>
+
+
+# Fitting information.
+# If fit is None, all species in the model are fitted to the data in the order they are listed in the model.
+# Otherwise, give a whitespace delimited list of fitting instrictions the same length as the dimensions of your data.
+# Use speciesN to denote the Nth species in your model. Simple arithmetic operations can be performed on these.
+# For example, to fit the sum of the first two species in the model to your first variable, write fit: species1+species2
+<fit> species7+species8 species7+species8 species7+species8 </fit>
+
+# Priors on initial conditions and parameters:
+# one of 
+#       constant, value 
+#       normal, mean, variance 
+#       uniform, lower, upper 
+#       lognormal, mean, variance 
+
+<initial>
+ <ic1> constant 81.94 </ic1>
+ <ic2> constant 18.06 </ic2>
+ <ic3> constant 272.22 </ic3>
+ <ic4> constant 19.93 </ic4>
+ <ic5> constant 7.85 </ic5>
+ <ic6> constant 288.5 </ic6>
+ <ic7> constant 8.92 </ic7>
+ <ic8> constant 2.93 </ic8>
+ <ic9> constant 333.0 </ic9>
+ <ic10> constant 0.0 </ic10>
+ <ic11> constant 0.0 </ic11>
+</initial>
+
+<parameters>
+<parameter1 realName='uVol'> constant 1.0 </parameter1>
+<parameter2 realName='parameter_1'> lognormal 0 1 </parameter2>
+<parameter3 realName='parameter_2'> lognormal -1 3 </parameter3>
+<parameter4 realName='parameter_3'> lognormal 3 1 </parameter4>
+<parameter5 realName='parameter_4'> lognormal 3 1 </parameter5>
+<parameter6 realName='kcat5'>       lognormal 0 1 </parameter6>
+<parameter7 realName='km5'>         lognormal 3 1 </parameter7>
+<parameter8 realName='kcat9'>       lognormal 0 1 </parameter8>
+<parameter9 realName='km9'>         lognormal 3 1 </parameter9>
+<parameter10 realName='kcat7'>      lognormal 0 1 </parameter10>
+<parameter11 realName='km7'>        lognormal 3 1 </parameter11>
+<parameter12 realName='kcat3'>      lognormal 0 1 </parameter12>
+<parameter13 realName='km3'>        lognormal 3 1 </parameter13>
+<parameter14 realName='V2'>         lognormal 0 1 </parameter14>
+<parameter15 realName='KK2'>        lognormal 3 1 </parameter15>
+</parameters>
+</model2>
+
+</models>
+
+</input>
+

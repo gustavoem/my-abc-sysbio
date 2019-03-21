@@ -1,0 +1,1831 @@
+
+ALGORITHM INFO
+modelnumber: 2
+restart: False
+particles: 100
+beta: 1
+dt: 0.01
+manual epsilon:
+	 380.0  370.0  360.0  340.0  300.0  250.0  150.0  100.0  90.0  70.0  50.0  30.0 
+kernel: KernelType.component_wise_uniform
+model kernel: 0.7
+model prior: [0.5, 0.5]
+DATA:
+	times: [0.0, 2.0, 5.0, 10.0, 20.0, 40.0]
+	vars:
+	 9.03  7.03  34.49  23.71  9.03  7.9 
+	 3.78  4.77  34.49  20.26  6.67  5.1 
+	 3.29  3.78  30.66  34.49  7.41  4.85 
+	 3.34  2.75  24.31  34.49  5.09  3.91 
+	 5.04  6.72  61.72  45.93  16.96  6.04 
+MODELS: 2
+	npar: 51
+	nspecies: 27
+	name: model1
+	source: model1.xml
+	type: ODE
+	fit: ['sample_points[:,12]/100', 'sample_points[:,12]/100', 'sample_points[:,12]/100', 'sample_points[:,12]/100', 'sample_points[:,12]/100']
+	init: [prior(type=<PriorType.constant: 0>, value=1000.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=500.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1200.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1200.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1500.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=3000.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=10000.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1000.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1000.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1200.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1500.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=2400.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None)]
+	prior: [prior(type=<PriorType.constant: 0>, value=1.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4)]
+	logp: False
+
+
+	npar: 57
+	nspecies: 29
+	name: model2
+	source: model2.xml
+	type: ODE
+	fit: ['sample_points[:,12]/100', 'sample_points[:,12]/100', 'sample_points[:,12]/100', 'sample_points[:,12]/100', 'sample_points[:,12]/100']
+	init: [prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=500.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1200.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1200.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1500.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=3000.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=10000.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1000.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1000.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1200.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1500.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=1200.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=2400.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.constant: 0>, value=0.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None)]
+	prior: [prior(type=<PriorType.constant: 0>, value=1.0, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=None, sigma=None), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=8.6, sigma=0.4), prior(type=<PriorType.lognormal: 3>, value=None, mean=None, variance=None, lower_bound=None, upper_bound=None, mu=1.97, sigma=0.64)]
+	logp: False
+
+
+#### Seeding random number generator :  2
+Looking for delay
+Looking for delay
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [18.40348138 14.67843755 14.33393143 14.37357268 15.55165001]
+ [83.16070216 83.79163838 83.82926397 83.8276365  83.66521425]
+ [99.53149968 99.54792701 99.54887258 99.54883611 99.54469125]
+ [99.9060011  99.90602001 99.90602131 99.90602119 99.90601619]
+ [99.90616056 99.90617255 99.90617346 99.90617337 99.90617007]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [16.53009649 13.20349484 12.91129144 12.94107245 13.97295453]
+ [92.05501437 95.79291255 96.02186712 95.99863773 95.12251302]
+ [99.99066773 99.99125172 99.99128355 99.99128044 99.99115586]
+ [99.99173137 99.99177822 99.99177985 99.99177969 99.99177271]
+ [99.99179016 99.9917913  99.99179136 99.99179136 99.99179113]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [13.48016143  9.36625995  8.99529531  9.03313422 10.3290273 ]
+ [51.62501312 59.49749406 60.34356354 60.25685716 57.37952524]
+ [98.97273522 99.76458251 99.79369405 99.79092471 99.66539652]
+ [99.98295141 99.98349038 99.98350786 99.98350623 99.98342674]
+ [99.98351523 99.98355456 99.98355682 99.9835566  99.9835481 ]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [13.08270348  8.55702836  8.13789708  8.18029928  9.63757964]
+ [37.10894468 34.27872611 34.00057305 34.0287473  34.98438003]
+ [67.47631295 65.79963274 65.63361658 65.65044129 66.2199393 ]
+ [92.7824373  92.36723964 92.32580125 92.33000347 92.47189043]
+ [99.51945404 99.50387571 99.50231375 99.5024722  99.5078149 ]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [18.15449035 19.05012558 19.33931823 19.30795466 18.48315127]
+ [94.8893744  99.98520741 99.99142299 99.99098537 99.91906847]
+ [99.99582692 99.99730892 99.99736308 99.99735811 99.99710838]
+ [99.99724482 99.99750571 99.99750745 99.99750731 99.99749464]
+ [99.99749547 99.99750844 99.9975088  99.99750876 99.99750736]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  5
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [66.83414321 77.51397599 78.51979205 78.41775144 74.89725275]
+ [99.98875123 99.98981199 99.98984965 99.98984611 99.9896798 ]
+ [99.98996926 99.99000249 99.99000285 99.99000282 99.99000086]
+ [99.98999967 99.99000222 99.9900024  99.99000238 99.99000172]
+ [99.98999619 99.98999998 99.99000025 99.99000023 99.98999921]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  6
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [59.56144421 56.71807556 56.4464454  56.47563449 57.40750897]
+ [98.45337339 98.29097951 98.27499519 98.27674592 98.33117338]
+ [99.97965523 99.97933139 99.97929895 99.97930247 99.97941132]
+ [99.98264861 99.98264869 99.9826487  99.9826487  99.98264868]
+ [99.98264859 99.98264868 99.98264869 99.98264869 99.98264866]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  7
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [17.9979728  15.22745383 14.98249928 15.01026734 15.87314475]
+ [82.4823182  83.98284636 84.06129158 84.05477412 83.74209737]
+ [99.70677677 99.73037356 99.73155995 99.7313923  99.72662906]
+ [99.92954868 99.92955337 99.92955361 99.92955358 99.92955263]
+ [99.92957388 99.92957586 99.92957597 99.92957596 99.92957555]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.99507816 3.76415942 3.27610442 3.32590455 5.01929462]
+ [8.94291506 3.7405155  3.25536525 3.30486691 4.98838348]
+ [8.85656    3.70141901 3.22107618 3.27008391 4.93725464]
+ [8.68602238 3.62437673 3.15352277 3.20155578 4.8364446 ]
+ [8.35351726 3.47480288 3.02243007 3.06856541 4.64050882]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02513187 3.77786718 3.28813554 3.33810805 5.0371877 ]
+ [9.01783422 3.77467012 3.28534078 3.33527207 5.03297206]
+ [9.00568358 3.76934751 3.28068796 3.33055064 5.0259535 ]
+ [8.98142764 3.75872403 3.2714015  3.32112722 5.01194441]
+ [8.93309672 3.73756384 3.25290509 3.30235795 4.98403816]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [46.58812845 49.28679139 49.57755383 49.54935721 48.50561781]
+ [99.99291742 99.99321941 99.99323055 99.99322952 99.99318212]
+ [99.99328303 99.99328537 99.99328554 99.99328552 99.99328494]
+ [99.99328325 99.9932853  99.99328546 99.99328544 99.99328487]
+ [99.99328302 99.99328513 99.9932853  99.99328528 99.99328469]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [49.328456   56.62322071 57.028164   56.98994912 55.29324669]
+ [99.96688541 99.98460097 99.98507779 99.98503402 99.98284703]
+ [99.99393289 99.99393679 99.9939369  99.99393689 99.99393641]
+ [99.99393643 99.99393742 99.99393747 99.99393747 99.99393728]
+ [99.99393599 99.99393708 99.99393713 99.99393713 99.99393692]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [32.65660927 34.09378032 34.29975479 34.27920206 33.61698921]
+ [99.99324501 99.99615999 99.99623145 99.99622465 99.99591048]
+ [99.99674531 99.99679531 99.99679667 99.99679654 99.99679029]
+ [99.9968014  99.99680205 99.99680209 99.99680208 99.99680195]
+ [99.99680153 99.99680205 99.99680208 99.99680208 99.99680195]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [ 9.59062131  5.00030553  4.6134667   4.65233176  6.0370298 ]
+ [14.57580821 19.46667249 20.98922328 20.81929931 16.77393835]
+ [33.3994792  71.51878802 78.06290671 77.38693504 56.9149756 ]
+ [87.63630945 99.95553273 99.96199034 99.96142441 99.88072069]
+ [99.92462521 99.97484018 99.9775165  99.97726022 99.96633313]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [11.0812712   7.28090753  6.98026343  7.01088096  8.10294837]
+ [39.77077828 64.4423176  67.5855286  67.26201307 56.82872598]
+ [95.37501455 99.94809315 99.96821812 99.96667017 99.79854971]
+ [99.98555981 99.99170735 99.99193684 99.99191556 99.99087252]
+ [99.99067029 99.99249136 99.99251789 99.99251563 99.99235533]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  5
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [29.67304497 29.9378835  30.01750921 30.00895941 29.77771316]
+ [99.14625924 99.61195357 99.63426134 99.63189577 99.54292543]
+ [99.93022932 99.93032638 99.93032882 99.93032859 99.9303181 ]
+ [99.93030535 99.93032921 99.93033095 99.93033077 99.9303244 ]
+ [99.93030478 99.93032884 99.93033058 99.93033041 99.93032398]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.00949324 3.77084797 3.28198486 3.33186821 5.02798797]
+ [8.97881111 3.75715948 3.26999724 3.31970606 5.01002025]
+ [8.92788169 3.73445047 3.25011107 3.29953027 4.98020778]
+ [8.82679721 3.68942422 3.21068602 3.25953059 4.92108145]
+ [8.62769766 3.6009199  3.13320785 3.18092143 4.80480072]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02286879 3.77680649 3.28720224 3.33716162 5.03581214]
+ [9.01218136 3.77202104 3.28300987 3.33290838 5.02953645]
+ [8.99439394 3.76405808 3.27603395 3.32583114 5.01909319]
+ [8.95891262 3.74818005 3.26212459 3.31171973 4.99826744]
+ [8.8883229  3.7166147  3.23447512 3.28366838 4.956858  ]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01936485 3.77515389 3.28574694 3.33568598 5.03367297]
+ [9.00343233 3.76789563 3.27937709 3.32922479 5.02419607]
+ [8.97693194 3.75582756 3.26878657 3.31848238 5.00843759]
+ [8.92413251 3.73179996 3.24770236 3.29709561 4.97705655]
+ [8.81933587 3.68417623 3.20591878 3.2547118  4.91483519]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02881004 3.77948623 3.28955152 3.33954484 5.0393201 ]
+ [9.02702537 3.77871571 3.28887891 3.33886221 5.03830042]
+ [9.02405167 3.77743185 3.28775819 3.3377248  5.0366014 ]
+ [9.01810706 3.77486541 3.28551788 3.33545113 5.03320502]
+ [9.00622896 3.76973763 3.28104175 3.33090832 5.02641894]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [ 9.13511922  3.93991563  3.45571362  3.50511839  5.18546447]
+ [12.04632846  8.97618282  8.76832336  8.78871334  9.58205869]
+ [29.66924571 43.92061944 45.95038954 45.73802463 39.25524667]
+ [82.67546901 98.0705382  98.5284549  98.48717563 96.22598964]
+ [99.82387585 99.8817443  99.88266829 99.88258904 99.87739414]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [19.56824182 15.82237839 15.47596274 15.50851605 16.70307562]
+ [97.62785655 98.28270053 98.32587046 98.32108182 98.15781128]
+ [99.98307671 99.98309305 99.98309379 99.98309372 99.98309075]
+ [99.98309443 99.98309846 99.98309877 99.98309874 99.98309764]
+ [99.98309306 99.98309743 99.98309776 99.98309772 99.98309653]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [26.60113924 24.48017545 24.3088499  24.26207762 24.94313502]
+ [96.61381318 96.97343447 96.98267942 96.97514893 96.90745072]
+ [99.96382329 99.96388762 99.96388947 99.96388825 99.96387577]
+ [99.96432373 99.96432911 99.96432951 99.9643295  99.96432799]
+ [99.96432348 99.96432893 99.96432934 99.96432933 99.9643278 ]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [16.49438191 15.25072978 15.18463375 15.19169708 15.43377283]
+ [63.93034041 77.62297198 78.57274361 78.4809671  74.80253301]
+ [99.2694978  99.79663326 99.81020232 99.80894912 99.74663945]
+ [99.94711574 99.94746228 99.94746613 99.94746577 99.94744673]
+ [99.94741546 99.94746594 99.94746877 99.9474685  99.94745725]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01688269 3.77426879 3.28499127 3.33491728 5.03243779]
+ [8.99723988 3.76568775 3.27749208 3.32730729 5.02111487]
+ [8.96459008 3.75142799 3.26503041 3.31466147 5.00229757]
+ [8.89962022 3.72306524 3.24024517 3.28950987 4.96486561]
+ [8.77099064 3.66696177 3.19122266 3.23976225 4.89080599]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.00909788 3.77034631 3.28151591 3.33139552 5.02743982]
+ [8.97782082 3.75590856 3.26882812 3.31852762 5.00865256]
+ [8.92589497 3.73195935 3.24778368 3.29718422 4.9774814 ]
+ [8.8228002  3.68448481 3.20607442 3.25488169 4.91566477]
+ [8.61961688 3.59121157 3.12415607 3.17179523 4.79411251]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.94392446 3.73964761 3.25448117 3.30398295 4.98770137]
+ [8.81606753 3.67985679 3.201867   3.25062921 4.91015722]
+ [8.60629853 3.58214661 3.11592273 3.16347289 4.78329902]
+ [8.19906684 3.3938317  2.95041733 2.99561945 4.53832798]
+ [7.43250317 3.04429696 2.64369072 2.68449196 4.08192242]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.6531211  3.57103678 3.10247967 3.15023044 4.78144326]
+ [8.10515769 3.27438712 2.83719864 2.88166795 4.41155111]
+ [7.23895828 2.82332053 2.43603091 2.47530283 3.84217614]
+ [5.68680902 2.07231798 1.77453191 1.80455406 2.872842  ]
+ [3.3019188  1.07015485 0.90605063 0.92244457 1.52736052]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02532789 3.77798084 3.28823725 3.33821102 5.03732857]
+ [9.01832401 3.77495408 3.28559487 3.3355293  5.033324  ]
+ [9.0066623  3.76991474 3.28119551 3.33106447 5.02665657]
+ [8.98338168 3.75985577 3.27241411 3.32215234 5.01334738]
+ [8.93699116 3.7398164  3.25492032 3.30439811 4.98683139]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  5
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.00996653 3.77068467 3.2818075  3.33169185 5.02790128]
+ [8.97998539 3.75675129 3.26955432 3.31926562 5.00980202]
+ [8.93020062 3.73363427 3.24922687 3.29865089 4.9797664 ]
+ [8.83131808 3.68779283 3.20892432 3.25777802 4.92017951]
+ [8.63628348 3.59766308 3.12971249 3.17744234 4.80292436]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [16.36114068 12.95052963 12.65713334 12.68155403 13.72775921]
+ [89.66118884 96.92197691 97.34725922 97.30681092 95.62014057]
+ [99.98608962 99.98987692 99.99014775 99.990122   99.98911891]
+ [99.99181426 99.99307124 99.99314227 99.9931357  99.99285501]
+ [99.99341697 99.99358864 99.99359364 99.9935932  99.99357026]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [31.2979165  33.28721343 33.55273668 33.52494637 32.6623367 ]
+ [98.35011077 99.13240418 99.17168115 99.16785315 99.01219499]
+ [99.92202203 99.92225862 99.92227    99.92226888 99.92222479]
+ [99.92221727 99.92232721 99.92233482 99.92233406 99.92230575]
+ [99.92221477 99.92232567 99.92233335 99.92233259 99.92230403]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [10.07070299  5.48637294  5.081476    5.12262023  6.54874434]
+ [23.82647999 35.34462143 37.26215978 37.05896227 31.16145274]
+ [70.6158504  96.43194268 97.46184099 97.36936532 92.37431838]
+ [99.92156475 99.98867402 99.98895668 99.98893138 99.98748734]
+ [99.98745929 99.98953505 99.98954988 99.98954872 99.98943396]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [40.31713039 50.05414775 51.15357112 51.04083471 47.33636009]
+ [99.47601182 99.9452258  99.95403248 99.95314183 99.90949645]
+ [99.98636275 99.98735744 99.98738129 99.98737904 99.98726079]
+ [99.98736785 99.98743463 99.98743664 99.98743643 99.98742839]
+ [99.9874031  99.98743371 99.9874357  99.9874355  99.98742796]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [31.98449636 35.46463291 35.94165478 35.89028587 34.36315183]
+ [99.27145259 99.90898341 99.92432284 99.92293493 99.84964099]
+ [99.97881413 99.98159499 99.98171273 99.98170161 99.98119915]
+ [99.98203225 99.98222315 99.98222601 99.98222575 99.98221086]
+ [99.98221197 99.98222726 99.9822283  99.9822282  99.98222435]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02001387 3.77552047 3.28607492 3.336018   5.03412818]
+ [9.00505301 3.7688106  3.28019568 3.33005349 5.02533242]
+ [8.98016705 3.75765263 3.27041926 3.32013525 5.01070465]
+ [8.93057778 3.73543064 3.25094985 3.3003833  4.98156818]
+ [8.83212673 3.69136027 3.21234271 3.26121543 4.92376896]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01413118 3.77243863 3.28333277 3.33324046 5.03024201]
+ [8.99036933 3.76112212 3.27335503 3.32312452 5.0156359 ]
+ [8.95087645 3.74232921 3.25678694 3.30632678 4.99137455]
+ [8.87230312 3.70499707 3.22388023 3.27296333 4.94315886]
+ [8.7167998  3.6313392  3.15897669 3.20715653 4.84794699]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.9922664  3.76223984 3.27436057 3.32414189 5.01700608]
+ [8.93590552 3.73574203 3.2510298  3.30048459 4.98268911]
+ [8.84260747 3.69195666 3.21248546 3.26139997 4.92595559]
+ [8.65838605 3.6057874  3.13665884 3.18450749 4.81420333]
+ [8.29933867 3.43894165 2.98994653 3.03572167 4.59743724]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01444093 3.77310879 3.28396942 3.33388117 5.03093798]
+ [8.99114784 3.76279455 3.27494352 3.32472317 5.01737381]
+ [8.95244718 3.74566417 3.25995345 3.30951364 4.99484366]
+ [8.87549842 3.71162739 3.23017143 3.2792954  4.95007001]
+ [8.72339817 3.64444151 3.17139237 3.21965451 4.86165928]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01502795 3.77295066 3.28379218 3.3337054  5.03087413]
+ [8.99260756 3.76239908 3.27450067 3.32428396 5.0172127 ]
+ [8.95534057 3.7448728  3.25906862 3.30863598 4.99451653]
+ [8.88118206 3.71004317 3.22840541 3.27754324 4.94939648]
+ [8.73436056 3.64126844 3.16787574 3.21616376 4.86023802]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [14.12708231 11.7330092  11.59502256 11.61075628 12.16364356]
+ [49.18176567 64.86376606 66.50689588 66.33904906 60.64765854]
+ [96.41416014 99.37825605 99.46552638 99.45729267 99.05790554]
+ [99.98552272 99.986527   99.98654816 99.98654612 99.98644984]
+ [99.98633026 99.98655281 99.98656722 99.98656576 99.98651124]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [46.97687264 47.26187251 47.23115098 47.24775412 47.22661404]
+ [99.49777333 99.52079238 99.52138786 99.52114301 99.51716977]
+ [99.94562187 99.94563156 99.94563222 99.94563214 99.94562968]
+ [99.94565131 99.94565949 99.9456601  99.94566003 99.94565784]
+ [99.94565093 99.94565921 99.94565984 99.94565977 99.94565754]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [ 9.02567351  3.85719435  3.37752177  3.42644022  5.09319648]
+ [ 9.58403735  5.81607342  5.62249615  5.63998705  6.49815556]
+ [12.25670842 16.86822946 18.76095679 18.54432978 13.83869591]
+ [23.71666684 62.30875441 71.20036429 70.24944857 44.89787039]
+ [64.7884404  99.80600699 99.84209544 99.83904541 99.14643258]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [15.62477054 18.9203787  19.7069773  19.62651332 17.30782788]
+ [60.80879955 86.14541647 87.49306848 87.36615173 81.52530556]
+ [99.06451478 99.89870915 99.90796005 99.90712926 99.85876591]
+ [99.97243619 99.97269711 99.97270079 99.97270042 99.97268526]
+ [99.97262094 99.97269605 99.9726999  99.97269951 99.97268391]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [18.3232959  18.92081459 19.16217217 19.13580871 18.46327218]
+ [93.81780022 99.77997473 99.84831192 99.84249968 99.42883298]
+ [99.97805091 99.98349242 99.98367392 99.98365722 99.98281798]
+ [99.98335879 99.98419321 99.98419987 99.98419932 99.98415527]
+ [99.98415085 99.98420301 99.98420472 99.98420455 99.98419792]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  5
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [10.16392279  5.8154684   5.44970007  5.48656918  6.79411494]
+ [22.57181502 35.4815325  37.82285522 37.57258976 30.52719567]
+ [65.74664051 96.86128074 97.94833613 97.85501778 91.99538533]
+ [99.92491739 99.99150894 99.99157926 99.99157383 99.9910382 ]
+ [99.99083819 99.99164094 99.99164319 99.99164298 99.99162907]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  6
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [65.24801946 89.45751532 91.23285446 91.06251846 84.15273274]
+ [99.99372018 99.99640719 99.99652679 99.99651657 99.99601791]
+ [99.99626974 99.99699179 99.99700622 99.99700511 99.99692698]
+ [99.99694919 99.99703222 99.99703255 99.99703253 99.99703027]
+ [99.9970276  99.99703234 99.99703255 99.99703253 99.99703174]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02115346 3.77582051 3.2863181  3.33626677 5.0345942 ]
+ [9.00789673 3.76955914 3.28080235 3.33067411 5.02649508]
+ [8.98583698 3.75914446 3.27162833 3.32137212 5.01302204]
+ [8.94184792 3.73839343 3.25335095 3.30283962 4.98617133]
+ [8.85439022 3.69720322 3.21707749 3.26605914 4.93284994]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01196477 3.77169259 3.28270111 3.33259732 5.02918399]
+ [8.98496888 3.75926323 3.2717812  3.32152209 5.0129994 ]
+ [8.94012732 3.73863208 3.25365694 3.30313988 4.98612994]
+ [8.85101089 3.69768476 3.21769033 3.26666084 4.93278245]
+ [8.6750306  3.61703748 3.14687294 3.19483238 4.82763899]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01866466 3.77509163 3.28571413 3.33565043 5.03350913]
+ [9.00168681 3.76774073 3.27929557 3.32913646 5.023788  ]
+ [8.97345733 3.75552025 3.26862522 3.31830748 5.00762644]
+ [8.91724866 3.73119515 3.24738635 3.29675278 4.97545409]
+ [8.80582639 3.68300518 3.20531299 3.25405354 4.91170835]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [60.14001934 64.85938862 65.29276106 65.24876767 63.72885285]
+ [99.94905603 99.95969254 99.96032172 99.96025896 99.95785879]
+ [99.98247071 99.98247414 99.98247439 99.98247437 99.98247343]
+ [99.9824707  99.98247413 99.98247439 99.98247436 99.98247343]
+ [99.98247052 99.98247401 99.98247427 99.98247424 99.98247329]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [69.04064538 67.2756123  67.11706554 67.13101571 67.70990682]
+ [99.9265131  99.9232298  99.92292832 99.92295435 99.92405047]
+ [99.97320718 99.97320747 99.9732075  99.97320749 99.9732074 ]
+ [99.97320773 99.97320806 99.97320809 99.97320809 99.97320799]
+ [99.97320769 99.97320803 99.97320806 99.97320806 99.97320795]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [48.58752221 50.47110444 50.58543236 50.57428937 50.12486668]
+ [97.68758893 97.83949432 97.84746161 97.84669005 97.81470196]
+ [99.85661125 99.85720584 99.85723576 99.85723286 99.85711179]
+ [99.86277104 99.86289941 99.86290523 99.86290467 99.86288057]
+ [99.86275755 99.86288906 99.86289502 99.86289445 99.86286975]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [96.09506855 97.92704611 98.04774646 98.03576679 97.58032421]
+ [99.99474046 99.99474841 99.99474865 99.99474862 99.99474758]
+ [99.99474932 99.99474957 99.99474959 99.99474959 99.99474952]
+ [99.99474931 99.99474956 99.99474958 99.99474958 99.99474951]
+ [99.99474928 99.99474954 99.99474956 99.99474956 99.99474949]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [22.32066635 21.70519242 21.71151857 21.70952213 21.73952354]
+ [96.25435642 99.15846738 99.27790544 99.2666287  98.76005007]
+ [99.99173294 99.99289906 99.99295364 99.9929484  99.99272302]
+ [99.99312476 99.99324818 99.99325079 99.99325055 99.99323791]
+ [99.99323842 99.99325314 99.99325407 99.99325398 99.99325048]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.95925356 3.74580648 3.2598035  3.30939029 4.99603921]
+ [8.85393489 3.69503169 3.21497732 3.26394929 4.93071444]
+ [8.68053073 3.61176766 3.14150287 3.18946346 4.82346965]
+ [8.3416374  3.45024851 2.99909767 3.04508499 4.61499879]
+ [7.69500891 3.14652497 2.73176439 2.77400027 4.22140308]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.99688823 3.76511869 3.27695814 3.32676928 5.02050276]
+ [8.9474214  3.74290073 3.25748775 3.3070168  4.99138849]
+ [8.86551006 3.70614657 3.2252821  3.2743442  4.94321376]
+ [8.70367317 3.63366215 3.16178013 3.20992025 4.84816122]
+ [8.3878316  3.49270993 3.03834137 3.08468446 4.66315104]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.99787892 3.76503314 3.27683433 3.32664878 5.02057151]
+ [8.94987417 3.7426849  3.25717752 3.30671473 4.99155436]
+ [8.8703365  3.70570861 3.2246594  3.27373743 4.94352584]
+ [8.71301556 3.63276231 3.16052661 3.20869713 4.84870917]
+ [8.40532007 3.49082423 3.03580859 3.08220684 4.66396032]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.0000474  3.76646934 3.27813569 3.32796452 5.02229539]
+ [8.95528131 3.74625897 3.26041541 3.30998847 4.99584639]
+ [8.8811038  3.7128022  3.23108375 3.28023313 4.95205113]
+ [8.73436103 3.64673298 3.17317145 3.22148319 4.86552587]
+ [8.44724603 3.51791341 3.06029737 3.10697218 4.69666847]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.003301   3.76853813 3.28000009 3.32985059 5.02481065]
+ [8.96339415 3.75140928 3.26505627 3.31468334 5.00211033]
+ [8.89725878 3.72303088 3.24029867 3.28955548 4.96449865]
+ [8.76638736 3.66690499 3.19133643 3.23986076 4.89010149]
+ [8.51015793 3.5571349  3.09558683 3.14267769 4.74455848]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [22.73737557 20.07642267 19.85040384 19.87329466 20.67560165]
+ [98.89830221 99.52339008 99.55828769 99.55486356 99.41875461]
+ [99.97836791 99.9786591  99.97867194 99.9786707  99.97861783]
+ [99.97868947 99.97872441 99.97872704 99.97872677 99.97871722]
+ [99.97868565 99.97872101 99.97872374 99.97872346 99.97871358]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [21.49514957 16.8064354  16.38192014 16.40484054 17.9407256 ]
+ [99.89757678 99.89543791 99.8954726  99.89488553 99.89613934]
+ [99.99127593 99.99127606 99.99127607 99.99127607 99.99127604]
+ [99.99127597 99.99127606 99.99127607 99.99127607 99.99127604]
+ [99.9912759  99.991276   99.99127601 99.99127601 99.99127598]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [49.16662178 52.60489206 52.98380097 52.94192422 51.6761749 ]
+ [99.98811288 99.9929592  99.99315742 99.99313785 99.9923213 ]
+ [99.99512079 99.99512284 99.99512289 99.99512288 99.99512266]
+ [99.99512243 99.99512288 99.99512292 99.99512291 99.99512279]
+ [99.9951224  99.99512286 99.99512289 99.99512289 99.99512276]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [99.95798627 99.9858038  99.98694576 99.98702377 99.98187271]
+ [99.99824185 99.99824197 99.99824197 99.99824197 99.99824195]
+ [99.9982419  99.99824196 99.99824197 99.99824197 99.99824195]
+ [99.99824189 99.99824196 99.99824196 99.99824196 99.99824194]
+ [99.99824186 99.99824194 99.99824194 99.99824194 99.99824192]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.0024303  3.76659819 3.27815726 3.32799599 5.0227966 ]
+ [8.96119596 3.74657423 3.26046489 3.31006247 4.99708522]
+ [8.8927921  3.71341015 3.23116809 3.28036575 4.95448204]
+ [8.75718139 3.64786102 3.17328342 3.22168873 4.87020451]
+ [8.49072246 3.51983634 3.06030828 3.1071587  4.70532314]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02499036 3.77777568 3.28805299 3.33802455 5.03707681]
+ [9.01748059 3.77444154 3.28513455 3.33506347 5.03269503]
+ [9.00497683 3.7688909  3.28027602 3.33013396 5.02540003]
+ [8.98001621 3.75781303 3.27057968 3.32029594 5.01083995]
+ [8.93028214 3.73575066 3.25126966 3.30070365 4.98183901]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.98114634 3.75586992 3.26863933 3.31835241 5.00915802]
+ [8.90823187 3.71992628 3.2368286  3.28611358 4.96319053]
+ [8.78768183 3.6606864  3.1844203  3.23299788 4.88736181]
+ [8.55022109 3.54467522 3.08186017 3.12904573 4.73861578]
+ [8.08974604 3.32229665 2.88553733 2.93002959 4.45255135]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01901187 3.77520653 3.28581143 3.33574949 5.03367268]
+ [9.00255301 3.76802737 3.27953832 3.3293836  5.024196  ]
+ [8.97518368 3.75609153 3.26910903 3.31880004 5.00843959]
+ [8.92067721 3.73232974 3.24834724 3.29773106 4.97706899]
+ [8.81258788 3.68524284 3.20720817 3.25598299 4.914893  ]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.96379178 3.75046006 3.26413037 3.31375377 5.00122603]
+ [8.86529295 3.7065622  3.22569123 3.27475459 4.94358934]
+ [8.70327922 3.63448555 3.1625889  3.21073167 4.8489115 ]
+ [8.38719611 3.49432465 3.03992076 3.08626965 4.66464581]
+ [7.78586555 3.22935231 2.80816774 2.85111193 4.31573208]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  5
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02002822 3.77512397 3.2856884  3.33562998 5.03375077]
+ [9.0050861  3.76782029 3.27923045 3.32908451 5.0243892 ]
+ [8.98022398 3.7556751  3.26849241 3.31820084 5.00881929]
+ [8.93065492 3.73148798 3.24711053 3.29652868 4.97780183]
+ [8.83213647 3.68352481 3.20472165 3.25356312 4.91625452]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [63.13664875 60.52963364 60.28327854 60.30309297 61.17263315]
+ [99.09249418 98.98661199 98.97620776 98.97703157 99.01343881]
+ [99.97173708 99.97166426 99.97165707 99.97165764 99.97168277]
+ [99.97233494 99.97233534 99.97233537 99.97233537 99.97233527]
+ [99.9723342  99.97233462 99.97233465 99.97233464 99.97233454]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [20.52680352 17.56517093 17.30803316 17.33885018 18.24556726]
+ [86.40323945 87.7792463  87.87268024 87.86454284 87.51527625]
+ [99.82641486 99.84398562 99.84513208 99.84503189 99.84072192]
+ [99.97883087 99.9788345  99.97883476 99.97883474 99.97883378]
+ [99.97884596 99.9788479  99.97884805 99.97884804 99.97884749]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [90.57191633 89.19918042 89.04771235 89.07664385 89.53642842]
+ [99.9965255  99.9965255  99.9965255  99.9965255  99.9965255 ]
+ [99.9965255  99.9965255  99.9965255  99.9965255  99.9965255 ]
+ [99.99652549 99.9965255  99.9965255  99.9965255  99.9965255 ]
+ [99.99652549 99.9965255  99.9965255  99.9965255  99.9965255 ]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [39.13158311 40.21330528 40.31836496 40.30717224 39.93276911]
+ [99.22385685 99.32523713 99.33145229 99.33084899 99.30691411]
+ [99.96860924 99.96861903 99.96861964 99.96861958 99.96861725]
+ [99.96866799 99.96866967 99.96866978 99.96866977 99.96866935]
+ [99.96866788 99.9686696  99.96866972 99.9686697  99.96866927]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01931689 3.77520875 3.28580186 3.33574098 5.03371927]
+ [9.00331321 3.76803267 3.27951425 3.32936216 5.02431186]
+ [8.97669628 3.75610128 3.26906042 3.31875666 5.00866928]
+ [8.92367149 3.73234599 3.24824818 3.29764233 4.97752034]
+ [8.81845434 3.68526256 3.20700291 3.25579786 4.91576417]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.99045112 3.7620248  3.2742287  3.32400218 5.01651637]
+ [8.93140853 3.73521233 3.25070578 3.30014119 4.98147953]
+ [8.83374945 3.69092317 3.21185592 3.26073239 4.92358468]
+ [8.64120404 3.60382099 3.13547142 3.18324682 4.80964971]
+ [8.26703306 3.43538791 2.98784043 3.0334797  4.58904513]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.96810714 3.75108136 3.26455427 3.31419641 5.00248747]
+ [8.87592134 3.70808345 3.22672742 3.2758368  4.94668543]
+ [8.7240115  3.63742395 3.16458472 3.21281687 4.85491609]
+ [8.42662771 3.49980375 3.04362074 3.09013814 4.67593486]
+ [7.85710056 3.23886014 2.81450968 2.85775304 4.33565842]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02453416 3.7776567  3.28795586 3.33792527 5.03689361]
+ [9.01634135 3.77414444 3.28489198 3.33481555 5.03223754]
+ [9.00270253 3.76829778 3.27979178 3.32963902 5.02448676]
+ [8.97548425 3.75663117 3.26961475 3.31930969 5.00902019]
+ [8.92128441 3.73340433 3.24935392 3.2987456  4.97822646]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01690817 3.77420467 3.28492871 3.33485447 5.03237804]
+ [8.99730269 3.76552765 3.2773359  3.32715049 5.02096555]
+ [8.96471276 3.75110842 3.2647188  3.31434862 5.00199909]
+ [8.89985394 3.72242866 3.23962492 3.2888871  4.96426931]
+ [8.77141258 3.66569887 3.189994   3.23852845 4.88961627]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  5
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.9958589  3.7644781  3.2763808  3.32618523 5.01972301]
+ [8.94485633 3.74130734 3.25605193 3.30556429 4.9894481 ]
+ [8.86040746 3.70298658 3.22243541 3.27146434 4.93936281]
+ [8.69357843 3.62744833 3.15618554 3.20426015 4.84057777]
+ [8.3680855  3.48069885 3.02753913 3.07375451 4.64845108]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [48.11716479 48.17911929 48.15568686 48.15657087 48.21113546]
+ [98.19328885 98.23267713 98.2332046  98.23308167 98.22879799]
+ [99.94763382 99.94769981 99.94770111 99.94770087 99.94769258]
+ [99.95019237 99.95019832 99.95019873 99.95019869 99.95019717]
+ [99.95019083 99.95019721 99.95019765 99.95019761 99.95019597]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [ 9.36484002  4.85362419  4.51808128  4.55098731  5.81722735]
+ [12.12883665 16.86271298 19.03117408 18.78012985 13.55958235]
+ [22.49087303 57.20601975 65.33355849 64.46219481 41.36868162]
+ [56.73584034 98.96188256 99.6699727  99.62523778 92.90242011]
+ [97.89134867 99.97254616 99.97760799 99.97713128 99.95511253]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [36.2343392  41.47530412 42.04627901 42.00197601 40.00535545]
+ [99.9396137  99.96752325 99.96812085 99.96806735 99.9652588 ]
+ [99.97180195 99.97186151 99.971862   99.97186195 99.97185937]
+ [99.97185747 99.97186195 99.97186223 99.9718622  99.97186113]
+ [99.97185734 99.97186186 99.97186215 99.97186212 99.97186104]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [12.15130767  8.06933674  7.71095634  7.74734886  9.00973069]
+ [46.5865139  57.85888364 59.02924648 58.90993659 54.87788884]
+ [98.12407055 99.59971188 99.64379481 99.63964156 99.44345277]
+ [99.98241944 99.98259873 99.98260159 99.98260132 99.98258811]
+ [99.98256847 99.98260109 99.98260324 99.98260303 99.98259492]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [10.04603485  6.6177892   6.45723732  6.4715871   7.20419296]
+ [19.01704315 39.20199273 44.07834305 43.54346872 29.99655442]
+ [50.28034233 97.64849842 99.03708848 98.93783509 88.68628467]
+ [98.16933329 99.94793829 99.95515995 99.95448693 99.92276071]
+ [99.88892839 99.9670732  99.96910085 99.9689429  99.95693106]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  5
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [20.79661806 23.03591394 23.43681941 23.39417642 22.14977837]
+ [92.41484302 98.80050429 98.97406157 98.95798183 98.14780513]
+ [99.98752788 99.98807059 99.98807397 99.98807368 99.98805192]
+ [99.98806137 99.98807933 99.98808012 99.98808004 99.98807697]
+ [99.98806361 99.98807834 99.9880792  99.98807912 99.98807577]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.9892193  3.75960735 3.27192269 3.32168251 5.01402259]
+ [8.92829711 3.72919583 3.24496987 3.29437098 4.97526285]
+ [8.82742286 3.67898063 3.20048103 3.24928841 4.91121137]
+ [8.62815386 3.58029851 3.1131084  3.1607438  4.78514869]
+ [8.2394858  3.38979645 2.9446516  2.99000489 4.54106555]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.98307638 3.75792106 3.27055813 3.32028622 5.01141229]
+ [8.9130616  3.72502284 3.24159378 3.29091629 4.96879964]
+ [8.79735489 3.67077542 3.193845   3.24249765 4.89849117]
+ [8.56960835 3.56443842 3.10028999 3.14762564 4.76051658]
+ [8.12858201 3.36017878 2.92074456 2.96553573 4.49490449]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01410794 3.77274255 3.28362926 3.33353809 5.03053007]
+ [8.99031479 3.76188079 3.27409496 3.32386729 5.01635569]
+ [8.95077914 3.74384279 3.25826242 3.307808   4.99281289]
+ [8.87215498 3.70800915 3.22681369 3.27590848 4.94603041]
+ [8.71668472 3.63730264 3.16477356 3.21297757 4.853668  ]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.99501934 3.76304853 3.27502568 3.32482123 5.01822184]
+ [8.94274306 3.73774769 3.25267919 3.30216928 4.98570538]
+ [8.85613411 3.69591494 3.21574    3.26472423 4.93191164]
+ [8.68485245 3.61349561 3.14299428 3.19097889 4.8258145 ]
+ [8.34997876 3.45355446 3.00194853 3.04798204 4.61949512]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [29.81821482 36.38582158 37.22721888 37.14440763 34.35489088]
+ [98.96157848 99.89361831 99.90942636 99.90807254 99.82732754]
+ [99.97457049 99.97538334 99.97539075 99.97539012 99.97534417]
+ [99.97537684 99.97539968 99.97540071 99.97540061 99.97539666]
+ [99.97538274 99.97539952 99.97540055 99.97540045 99.97539648]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [12.26266654  9.27099313  9.0757075   9.09523654  9.8511998 ]
+ [49.81868517 81.37555191 84.67199312 84.34282929 72.55746283]
+ [99.75351704 99.98233866 99.98361665 99.98349225 99.97826697]
+ [99.97957869 99.98964579 99.99010893 99.99006478 99.98811463]
+ [99.988022   99.99169006 99.99177451 99.9917671  99.99131942]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02839733 3.77931357 3.28940126 3.33939229 5.03908982]
+ [9.02599383 3.77828415 3.28850334 3.33848093 5.03772485]
+ [9.02198936 3.77656907 3.28700736 3.33696255 5.03545071]
+ [9.01398555 3.77314121 3.2840174  3.33392782 5.03090544]
+ [8.9979984  3.76629466 3.27804552 3.32786651 5.02182692]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02104384 3.77600195 3.28649851 3.33644756 5.03475289]
+ [9.00762446 3.77001242 3.28125298 3.33112568 5.02689182]
+ [8.98529845 3.76004997 3.27252824 3.32227395 5.01381559]
+ [8.94079468 3.74020025 3.25514541 3.30463801 4.98775877]
+ [8.85237779 3.70079989 3.22064492 3.26963481 4.93602568]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.0037824  3.76756136 3.27903733 3.32888502 5.02392952]
+ [8.96456989 3.74897278 3.26265601 3.31227594 4.99990797]
+ [8.89951879 3.71817607 3.2355203  3.28476251 4.96009574]
+ [8.77054923 3.6572688  3.18186848 3.23036231 4.88130504]
+ [8.51710954 3.53816105 3.07700719 3.12403222 4.72701929]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.00324323 3.76743687 3.27893987 3.32878492 5.02372432]
+ [8.96322904 3.74866362 3.262414   3.31202738 4.99939817]
+ [8.89686058 3.71756454 3.2350417  3.28427095 4.95908674]
+ [8.76532584 3.65607247 3.18093263 3.22940108 4.87932885]
+ [8.50702744 3.53587215 3.07521827 3.12219461 4.72322959]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.00913736 3.77051639 3.28167902 3.33155952 5.02761066]
+ [8.97792148 3.75633281 3.26923486 3.31893659 5.00907914]
+ [8.92610276 3.73280474 3.24859373 3.29799877 4.9783328 ]
+ [8.82324114 3.68616304 3.20768091 3.25649727 4.91736038]
+ [8.62059619 3.59451778 3.12731471 3.17497235 4.79747398]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  5
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.96368426 3.74826572 3.26200557 3.31161932 4.99909267]
+ [8.86492794 3.70111237 3.22041989 3.26945874 4.93827172]
+ [8.7022382  3.62370659 3.15218173 3.20027429 4.83833165]
+ [8.38394119 3.47325385 3.0196477  3.06589185 4.64372746]
+ [7.77520704 3.18918327 2.76977275 2.81249383 4.27500183]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  6
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01915863 3.77505382 3.28565857 3.33559639 5.03354435]
+ [9.00291751 3.7676459  3.27915656 3.32900124 5.02387508]
+ [8.97590478 3.75532957 3.26834684 3.31803663 5.00779742]
+ [8.92208807 3.73080986 3.24682818 3.29620945 4.9757834 ]
+ [8.81528635 3.68221937 3.20419144 3.25296073 4.91231741]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  7
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.00638699 3.76883408 3.28016251 3.33002546 5.02556129]
+ [8.97106045 3.75214128 3.26545688 3.31511485 5.00397143]
+ [8.9124303  3.72446892 3.24108197 3.29039983 4.96816964]
+ [8.79609484 3.66967932 3.19283295 3.24147635 4.89724225]
+ [8.56709966 3.56229291 3.09831175 3.14562903 4.75806306]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 0
+num_simulation =  0
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [31.66016308 31.61525739 31.63914499 31.66078517 31.55983552]
+ [99.16646519 99.32910328 99.340084   99.33946438 99.29746121]
+ [99.98751075 99.98752925 99.98753049 99.98753042 99.98752566]
+ [99.98760098 99.98760149 99.98760152 99.98760152 99.98760139]
+ [99.98760088 99.98760142 99.98760145 99.98760145 99.98760131]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [16.34695931 14.9577833  14.9128845  14.91652688 15.12806456]
+ [70.31348339 85.49536243 86.61550726 86.50439076 82.2746793 ]
+ [99.78969249 99.96671622 99.96983441 99.96954866 99.95423928]
+ [99.98554263 99.98573968 99.98574082 99.98574072 99.98573299]
+ [99.98573454 99.98574128 99.98574164 99.98574161 99.98574023]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [11.88441222  7.79167785  7.43492876  7.47207678  8.73197135]
+ [53.48250846 71.54716893 73.43775429 73.24561051 66.72621072]
+ [99.66248521 99.97964144 99.98187577 99.98168388 99.96807628]
+ [99.98580778 99.98734803 99.98737864 99.98737593 99.98721291]
+ [99.9873537  99.98744015 99.98744108 99.98744099 99.98743671]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [10.80187639  6.21359996  5.79801505  5.84031136  7.29323625]
+ [51.92965804 72.95648914 75.29850805 75.05899881 67.09095805]
+ [99.97025884 99.98906038 99.98961439 99.98956003 99.98739842]
+ [99.98972292 99.99324119 99.99340239 99.99338703 99.99270895]
+ [99.99309192 99.99401777 99.99403717 99.99403542 99.99393625]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[ 9.03        3.78        3.29        3.34        5.04      ]
+ [12.20041171  7.47192998  7.03500558  7.07957459  8.59916204]
+ [85.41865409 89.8703801  90.23432316 90.19767912 88.89041736]
+ [99.97422898 99.97465412 99.97467346 99.97467159 99.97459238]
+ [99.97478985 99.97480155 99.97480236 99.97480228 99.97479929]
+ [99.97478986 99.97480093 99.97480174 99.97480166 99.97479867]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+Simulating model 1
+num_simulation =  0
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.99856858 3.76423458 3.27601968 3.32583445 5.01993385]
+ [8.95156836 3.74069217 3.25514652 3.30468436 4.98995727]
+ [8.873626   3.70173562 3.22061626 3.26969497 4.94032236]
+ [8.71920651 3.62486788 3.15251678 3.20068637 4.84226845]
+ [8.41620866 3.4752544  3.02010192 3.06648979 4.65097116]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  1
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.02904397 3.77957613 3.28962903 3.3396236  5.03944275]
+ [9.0276101  3.77894041 3.28907264 3.33905908 5.03860698]
+ [9.02522077 3.7778811  3.28814554 3.33811842 5.03721433]
+ [9.02044382 3.77576333 3.28629208 3.33623786 5.03443011]
+ [9.01089678 3.77153121 3.28258818 3.33247979 5.02886603]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  2
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01546202 3.77298952 3.28381051 3.33372566 5.03098159]
+ [8.99368899 3.76249552 3.27454601 3.32433408 5.01747998]
+ [8.95749102 3.7450633  3.25915764 3.3087345  4.9950465 ]
+ [8.88543363 3.7104147  3.22857691 3.27773344 4.95043831]
+ [8.74266887 3.64197459 3.16819335 3.21651766 4.86225062]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  3
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [9.01317244 3.77220473 3.28314702 3.33305    5.02986566]
+ [8.98798015 3.76053964 3.27289252 3.32265027 5.01469854]
+ [8.94612363 3.74117184 3.25586804 3.30538454 4.98951151]
+ [8.86289902 3.70271243 3.22206669 3.27110371 4.93947913]
+ [8.69839271 3.62688813 3.15544487 3.20353485 4.84076979]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+num_simulation =  4
+beta = 0
+points: 
+[[9.03       3.78       3.29       3.34       5.04      ]
+ [8.97603411 3.75199889 3.26507177 3.31475179 5.00469384]
+ [8.89548976 3.71031937 3.22797942 3.27718191 4.95209797]
+ [8.76232759 3.64170728 3.16695325 3.2153664  4.86540308]
+ [8.50004612 3.50764953 3.04784261 3.09470181 4.69560408]
+ [7.99163397 3.25192074 2.82109522 2.86494651 4.37014597]]
+data: 
+[[9.03 3.78 3.29 3.34 5.04]
+ [7.03 4.77 3.78 2.75 6.72]
+ [34.49 34.49 30.66 24.31 61.72]
+ [23.71 20.26 34.49 34.49 45.93]
+ [9.03 6.67 7.41 5.09 16.96]
+ [7.9 5.1 4.85 3.91 6.04]]
+### iteration:1, eps=['380.00'], sampled=108, accepted=92.6%
+	 model marginals                  : [0.48000000000000026, 0.5200000000000002]
+Simulating model 0
