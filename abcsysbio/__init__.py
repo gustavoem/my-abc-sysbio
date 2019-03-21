@@ -3,6 +3,8 @@
 # Centre for Bioinformatics
 # Imperial College London
 
+print (">>>> USING LOCAL ABCSYSBIO")
+
 from generateTemplate import generateTemplate
 from checkInputArguments import checkInputABC
 

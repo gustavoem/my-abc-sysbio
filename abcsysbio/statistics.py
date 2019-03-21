@@ -31,6 +31,9 @@ def getPdfGauss(mean,scale,parameter):
 
 ################ compute the pdf of lognormal distribution
 def getPdfLognormal(mean,sigm,parameter):
+    if parameter <= 0:
+        return 0
+
     x = exp(-0.5*(log(parameter)-mean)*(log(parameter)-mean)/(sigm*sigm) )
     x = x/( parameter*sigm*sqrt(2*pi) )
     return x
